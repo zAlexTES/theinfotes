@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheInfoTES - Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('paisaje borroso minec.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(68, 68, 68, 0.8); /* Fondo semi-transparente */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        footer {
+            background: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .title {
+            font-size: 3em;
+            margin: 20px 0;
+            font-family: 'Dancing Script', cursive;
+        }
+        .title .the {
+            color: #00BFFF; /* Celeste */
+        }
+        .title .info {
+            color: #800080; /* Morado */
+        }
+        .title .tes {
+            color: #008000; /* Verde */
+        }
+        .contact-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-section img {
+            width: 50px; /* Tamaño de la imagen */
+            height: 50px;
+            vertical-align: middle;
+        }
+        .contact-section button {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-section button:hover {
+            background-color: #45a049;
+        }
+        .contact-section p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            const textToCopy = "alexakiroh";
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Texto copiado: " + textToCopy);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            <span class="the">The</span>
+            <span class="info">Info</span>
+            <span class="tes">TES</span>
+        </h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skin.html">Skin</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="container">
+        <section class="contact-section">
+            <p>Escríbeme al md -> <img src="discordlogo.webp" alt="Discord Logo"> <strong>alexakiroh</strong></p>
+            <button onclick="copyToClipboard()">Copiar Nombre de Usuario</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 TheInfoTES. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
